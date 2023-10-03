@@ -1,0 +1,103 @@
+* {
+    font-family: roboto;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-height: 100vh;
+    margin: 0;
+    background-image: url("bg.png");
+    background-size: 20%;
+    /* background-size: cover; */
+}
+.footer {
+    background: rgba(255, 255, 255, 0.24);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    flex-shrink: 0;
+    text-align: center;
+    font-size: small;
+}
+
+.body {
+    flex-grow: 1;
+    margin: 2vh;
+}
+
+.header {
+    display: flex;
+    flex-shrink: 0;
+    padding: 2vh;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.title {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 13px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white
+}
+
+input[type=text] {
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 13px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 20px;
+    font-size: 150%;
+    border: none;
+    width: 30vw;
+    border: 1px solid white
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90vw, 1fr));
+    gap: 10px;
+  }
+  
+  .box {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 13px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+    padding: 20px;
+    font-size: 150%;
+    border: 1px solid white
+  }
+
+@media (max-width: 600px) {
+    .header {
+       justify-content: center;
+    }
+    input[type=text] {
+        margin-top: 2vh;
+        width: 90vw;
+    }
+    .title {
+        width: 90vw;
+    }
+ }
+
+h1 {
+    margin: 0;
+    font-size: large;
+}
+h2 {
+    margin: 0;
+    font-size: small;
+    font-weight: lighter;
+}
