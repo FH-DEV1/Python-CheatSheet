@@ -11,6 +11,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
         <script src="main.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark-dimmed.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
     </head>
     <body>
         <div class="header">
@@ -22,40 +25,75 @@
         <div class="body">
             <div class="container">
                 <div class="box">
-                    <h1>Box 1</h1>
-                    <h2>Sous-Titre</h2>
+                    <h1>1) L'affectation</h1>
+                    <h2>Une variable est un espace de stockage dans lequel on peut lire et écrire.</h2>
+                    <h2>Exemple :</h2>
+                    <pre>
+                        <code class="python">text = "mot"</code>
+                    </pre>
                 </div>
                 <div class="box">
-                    <h1>Box 2</h1>
-                    <h2>Sous-Titre</h2>
+                    <h1>2) Les operateurs :</h1>
                 </div>
                 <div class="box">
-                    <h1>Box 3</h1>
-                    <h2>Sous-Titre</h2>
+                    <h1>3) Les differents types :</h1>
                 </div>
                 <div class="box">
-                    <h1>Box 4</h1>
-                    <h2>Sous-Titre</h2>
+                    <h1>4) La conditionelle</h1>
+                    <h2>Elle permet de choisir d'executer certaines actions et pas d'autre.</h2>
+                    <h2>Exemple :</h2>
+                    <pre>
+                        <code class="python">color = "red"
+if color == "red":
+    print("color is red")
+else:
+    print("color is not red")
+
+output :
+"color is red"</code>
+                    </pre>
                 </div>
                 <div class="box">
-                    <h1>Box 5</h1>
-                    <h2>Sous-Titre</h2>
+                    <h1>5) La boucle bornée</h1>
+                    <h2>Elle permet de repeter un bloc d'instruction un nombre fixe de fois.</h2>
+                    <h2>Exemple :</h2>
+                    <pre>
+                        <code class="python">for i in range(3):
+    print(i)
+
+output : 
+0
+1
+2</code>
+                    </pre>
                 </div>
                 <div class="box">
-                    <h1>Box 6</h1>
-                    <h2>Sous-Titre</h2>
+                    <h1>6) La boucle non-bornée</h1>
+                    <h2>Elle permet de repeter des instructions un nombre indefini de fois (peut être infini).</h2>
+                    <h2>Exemple :</h2>
+                    <pre>
+                        <code class="python">nbr = 0
+While nbr != 2:
+    print(nbr)
+    nbr += 1
+
+output:
+0
+1</code>
+                    </pre>
                 </div>
                 <div class="box">
-                    <h1>Box 7</h1>
-                    <h2>Sous-Titre</h2>
-                </div>
-                <div class="box">
-                    <h1>Box 8</h1>
-                    <h2>Sous-Titre</h2>
-                </div>
-                <div class="box">
-                    <h1>Box 9</h1>
-                    <h2>Sous-Titre</h2>
+                    <h1>7) Les fonctions</h1>
+                    <h2>Elle permet de reutiliser un bloc de code dans le programme. Pour cela on nomme le bout de code et on le reutilise en utilisant sont nom.</h2>
+                    <h2>Exemple :</h2>
+                    <pre>
+                        <code class="python">def square(x):
+    print(x ** 2)
+square(2)
+
+output :
+4</code>
+                    </pre>
                 </div>
             </div>              
         </div>
