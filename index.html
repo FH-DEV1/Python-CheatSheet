@@ -29,17 +29,99 @@
                     <h2>Une variable est un espace de stockage dans lequel on peut lire et écrire.</h2>
                     <h2>Exemple :</h2>
                     <pre>
-                        <code class="python">text = "mot"</code>
+                        <code class="python">text = "mot"
+print(text)
+
+output :
+"mot"</code>
                     </pre>
                 </div>
                 <div class="box">
-                    <h1>2) Les operateurs :</h1>
+                    <h1>2) Les differents types :</h1>
+                    <h2>Il y a 15 types principaux en python. Les 5 plus utilisé sont : <br>-string (str), les chaine de characteres<br>-integer (int), les nombres entiers<br>-floatant (float), les nombres à virgules<br>-boolean (bool), un état (True ou False)<br>-liste (list), une liste d'element</h2>
+                    <h2>Exemple :</h2>
+                    <pre>
+                        <code class="python">print(type("chaine"))  #string
+print(type(1))  # integer
+print(type(1.1))  # floatant
+print(type(True))  # boolean
+print(type([1, 2, "3"]))  # list
+
+output :
+&lt;class 'str'&gt;
+&lt;class 'int'&gt;
+&lt;class 'float'&gt;
+&lt;class 'bool'&gt;
+&lt;class 'list'&gt;</code>
+                    </pre>
                 </div>
                 <div class="box">
-                    <h1>3) Les differents types :</h1>
+                    <h1>3) Les operateurs mathematiques :</h1>
+                    <h2>Ils permettens d'effectuer des operations arithmetiques.</h2>
+                    <h2>Exemple :</h2>
+                    <pre>
+                        <code class="python">a = 1
+b = 2
+print(a + b)    # addition
+print(b - a)    # soustraction
+print(a * b)    # multiplication
+print(a ** b)   # carre
+print(a % b)    # reste de division euclidienne
+print("1" + "2")
+
+output :
+3
+1
+2
+1
+1
+"12"</code>
+                    </pre>
                 </div>
                 <div class="box">
-                    <h1>4) La conditionelle</h1>
+                    <h1>4) Les operateurs de comparaisons :</h1>
+                    <h2>Ils permettent de comparer 2 valeurs. Ils retournent un boolean.</h2>
+                    <h2>Exemple :</h2>
+                    <pre>
+                        <code class="python">x = 3
+y = 5
+print(x == y)
+print(x != y)
+print(x > y)
+print(x < y)
+print(x >= y)
+print(x <= y)
+print(x == "3")
+
+output :
+False
+True
+False
+True
+False
+True
+False</code>
+                    </pre>
+                </div>
+                <div class="box">
+                    <h1>5) Les operateurs logiques :</h1>
+                    <h2>Ils permettent de comparer plusieurs elements. Ils retournent un boolean.</h2>
+                    <h2>Exemple :</h2>
+                    <pre>
+                        <code class="python">a = 5
+b = 7
+print(a == b or a == 7)
+print(a != b and a == 7)
+print(not(a == b or a == 7))
+
+output :
+True
+True
+False</code>
+                    </pre>
+                </div>
+                <div class="box">
+                    <h1>6) La conditionelle</h1>
                     <h2>Elle permet de choisir d'executer certaines actions et pas d'autre.</h2>
                     <h2>Exemple :</h2>
                     <pre>
@@ -54,7 +136,7 @@ output :
                     </pre>
                 </div>
                 <div class="box">
-                    <h1>5) La boucle bornée</h1>
+                    <h1>7) La boucle bornée</h1>
                     <h2>Elle permet de repeter un bloc d'instruction un nombre fixe de fois.</h2>
                     <h2>Exemple :</h2>
                     <pre>
@@ -68,7 +150,7 @@ output :
                     </pre>
                 </div>
                 <div class="box">
-                    <h1>6) La boucle non-bornée</h1>
+                    <h1>8) La boucle non-bornée</h1>
                     <h2>Elle permet de repeter des instructions un nombre indefini de fois (peut être infini).</h2>
                     <h2>Exemple :</h2>
                     <pre>
@@ -83,7 +165,7 @@ output:
                     </pre>
                 </div>
                 <div class="box">
-                    <h1>7) Les fonctions</h1>
+                    <h1>9) Les fonctions</h1>
                     <h2>Elle permet de reutiliser un bloc de code dans le programme. Pour cela on nomme le bout de code et on le reutilise en utilisant sont nom.</h2>
                     <h2>Exemple :</h2>
                     <pre>
